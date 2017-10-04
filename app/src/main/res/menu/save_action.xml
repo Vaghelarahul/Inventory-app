@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/save_product"
+        android:icon="@drawable/ic_done"
+        android:title="@string/save"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/edit_product"
+        android:title="@string/edit"
+        app:showAsAction="collapseActionView"
+        />
+
+    <item
+        android:id="@+id/delet_product"
+        android:title="@string/delete"
+        app:showAsAction="collapseActionView"
+        />
+
+
+
+
+</menu>

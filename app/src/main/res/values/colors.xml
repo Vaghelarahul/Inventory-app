@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a67909</color>
+    <color name="colorPrimaryDark">#634805</color>
+    <color name="colorAccent">#a67909</color>
+    <color name="listBackground">#ececec</color>
+
+    <color name="textColor">#636d53</color>
+    <color name="editTextColor">#C0403C</color>
+
+    <color name="detailColorPrimary">#2D3640</color>
+    <color name="detailColorPrimaryDark">#394450</color>
+    <color name="detailColorAccent">#C0403C</color>
+
+</resources>

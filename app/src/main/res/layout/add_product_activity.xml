@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+<LinearLayout
+    android:id="@+id/name_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:text="@string/product_name"
+        android:textColor="@color/editTextColor"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="13dp"
+        android:text="@string/product_price"
+        android:textColor="@color/editTextColor"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="13dp"
+        android:text="@string/product_quantity"
+        android:textColor="@color/editTextColor"
+        android:textAppearance="?android:textAppearanceSmall"
+
+
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/price_layout"
+    android:layout_toRightOf="@+id/name_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name"
+        android:fontFamily="sans-serif-light"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:hint="@string/name_hint" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_name"
+        android:inputType="number"
+        android:fontFamily="sans-serif-light"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:hint="@string/price_hint" />
+
+    <EditText
+        android:id="@+id/edit_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_price"
+        android:inputType="number"
+        android:fontFamily="sans-serif-light"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:hint="@string/quantity_hint" />
+
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/image_edit"
+    android:layout_below="@+id/price_layout"
+    android:layout_margin="16dp"
+    android:src="@drawable/take_image"
+    android:layout_centerInParent="true"
+    android:layout_width="180dp"
+    android:layout_height="180dp" />
+
+</RelativeLayout>
+
+    </ScrollView>
