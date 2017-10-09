@@ -12,6 +12,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -44,7 +45,7 @@ public class ProductsActivity extends AppCompatActivity implements View.OnClickL
         View emptyView = (View) findViewById(R.id.empty_view);
         mListView.setEmptyView(emptyView);
 
-        Button button = (Button) findViewById(R.id.add_product);
+        FloatingActionButton button = (FloatingActionButton) findViewById(R.id.add_product);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
